@@ -9,7 +9,10 @@ PRs are welcomed and ecncouraged.
 returns self(the model) which can be very infuriating when you are in a hurry and it returns the 20 line list of parameters of your model. These methods are also almost the same, just the difference being that `model.to(device)` provides flexibity as deivce variable can be cuda or cpu using an `if`;depending on whether the computer has a CUDA compatible GPU.<br>
 
 `Tensor.retain_grad()`<br>
-By default pytorch only updates gradients for leaf tensors but using this method the graidients are updated for that non leaf tensor also.
+By default pytorch only updates gradients for leaf tensors but using this method the gradients are updated for that non leaf tensor also.
+
+`Tensor is_leaf`<br>
+This part is a little weird. Checkout doc before working with them. https://pytorch.org/docs/stable/autograd.html#torch.Tensor.is_leaf
 
 `nn.Module`<br> does not have a builtin `.device` method that is for tensors. The reason being that nn.Module can hold different types of data and on different devices.<br>
 Workaround for this is to use `next(model.parameters()).device`.<br>
