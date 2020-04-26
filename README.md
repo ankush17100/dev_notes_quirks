@@ -21,5 +21,10 @@ This pushes the tensor to cuda but creates a copy so be sure to write - `tensor 
 Workaround for this is to use `next(model.parameters()).device`.<br>
 Pytorch Issue - https://github.com/pytorch/pytorch/issues/7460
 
+`numpy_tensor.dtype = 'uint8'`<br>
+NEVER DO THIS<br>
+Always do this - `numpy_tensor = numpy_tensor.astype(np.uint8)`<br>
+Check this link for details - https://stackoverflow.com/questions/46950742/numpy-array-shape-changes-when-changing-dtype
+
 # Github Markdown
 Good gist on newline; read comments also. https://gist.github.com/shaunlebron/746476e6e7a4d698b373 
