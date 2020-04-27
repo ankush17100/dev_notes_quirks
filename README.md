@@ -21,12 +21,14 @@ This pushes the tensor to cuda but creates a copy so be sure to write - `tensor 
 Workaround for this is to use `next(model.parameters()).device`.<br>
 Pytorch Issue - https://github.com/pytorch/pytorch/issues/7460
 
+# Numpy
 `numpy_tensor.dtype = 'uint8'`<br>
 NEVER DO THIS<br>
 Always do this - `numpy_tensor = numpy_tensor.astype(np.uint8)`<br>
 Check this link for details - https://stackoverflow.com/questions/46950742/numpy-array-shape-changes-when-changing-dtype
 
-`HTML and Javascript`<br>
+# HTML and Javascript
+`Some functionality not working by opening files directly into browser`<br>
 It's this weird thing that when I open an index.html file directly to a browser, some of it's functonality is not supported. 
 I have to make an HTTP server and only then can I access the materials. These include the laptop camera and other features as well.<br> Need a workaround this. <br>
 Making a server for small tasks is exhausting.
