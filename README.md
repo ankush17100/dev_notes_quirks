@@ -26,5 +26,9 @@ NEVER DO THIS<br>
 Always do this - `numpy_tensor = numpy_tensor.astype(np.uint8)`<br>
 Check this link for details - https://stackoverflow.com/questions/46950742/numpy-array-shape-changes-when-changing-dtype
 
+'HTML and Javascript'<br>
+It's this weird thing that when I open an index.html file directly to a browser, some of it's functonality is not supported. 
+I have to make an HTTP server and only then can I access the materials. These include the laptop camera and other features as well.<br> Need a workaround this. <br>
+Making a server for small tasks is exhausting.
 # Github Markdown
 Good gist on newline; read comments also. https://gist.github.com/shaunlebron/746476e6e7a4d698b373 
