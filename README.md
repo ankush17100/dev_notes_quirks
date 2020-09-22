@@ -2,7 +2,7 @@
 For quirky syntax and characteristics of languages and libraries that I can never remember and always run into.
 <br> 
 Their explanations and reasons can optionally be written.<br>
-PRs are welcomed and ecncouraged.
+PRs are welcomed and encouraged.
 
 # Pytorch
 `model.cuda()` and `model.to(torch.device('cuda')`<br>
